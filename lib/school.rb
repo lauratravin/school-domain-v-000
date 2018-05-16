@@ -1,5 +1,4 @@
 # code here!
-
 class School
   attr_accessor :roster
   attr_reader :school
@@ -18,7 +17,8 @@ class School
          end
      end
   end
-  def grade
+  def grade(g)
+    self.roster[g]
   end
   def sort
   end
