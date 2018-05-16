@@ -22,7 +22,7 @@ class School
   end
   def sort
     @sort = {}
-    self.roaster.keys.sort.each { |chr| @sort[chr]= roster[chr].sort  }
+    self.roster.keys.sort.each { |chr| @sort[chr]= roster[chr].sort  }
     return @sort
   end
 end
