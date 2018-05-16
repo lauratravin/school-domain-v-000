@@ -21,5 +21,8 @@ class School
     self.roster[g]
   end
   def sort
+    @sort = {}
+    self.roaster.keys.sort.each { |chr| @sort[chr]= roaster[chr].sort  }
+    return @sort
   end
 end
